@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Seohyun Ahn | @ KAIST</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .resume-viewer {
+            width: 100%;
+            height: 1250px;
+            border-radius: 8px;
+            background: white;
+            display: block;
+        }
+
+        .resume-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 32px;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .resume-viewer { height: 700px; }
+            .resume-controls { flex-direction: column-reverse; gap: 16px; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body data-theme="light">
+
+    <canvas id="hero-canvas"></canvas>
+
+    <div id="content-wrapper">
+        <div class="nav-wrapper">
+            <nav class="nav-pill">
+                <a href="index.html" class="nav-brand">Seohyun Ahn</a>
+                <div class="nav-links">
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#works">Works</a>
+                    <a href="index.html#afterhours">After Hours</a>
+                </div>
+                <button class="theme-toggle" id="theme-toggle">◑</button>
+            </nav>
+        </div>
+
+        <div class="container">
+            <section style="padding-top: 150px; padding-bottom: 80px;">
+                <div class="resume-controls">
+                    <a href="Resume_20230394_SeohyunAhn.pdf" download class="btn">
+                        Download PDF
+                    </a>
+
+                    <a href="index.html#about" class="back-pill">
+                        <span class="arrow">&larr;</span> 
+                        <span>Back to Home</span>
+                    </a>
+                </div>
+
+                <div class="glass-card" style="padding: 8px;">
+                    <iframe src="Resume_20230394_SeohyunAhn.pdf" class="resume-viewer">
+                    </iframe>
+                </div>
+            </section>
+
+            <footer>
+                &copy; 2026 Seohyun Ahn. All rights reserved.
+            </footer>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

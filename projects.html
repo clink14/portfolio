@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Seohyun Ahn | @ KAIST</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+
+    <canvas id="hero-canvas"></canvas>
+
+    <div id="content-wrapper">
+
+        <div class="nav-wrapper">
+            <nav class="nav-pill">
+                <a href="index.html" class="nav-brand">Seohyun Ahn</a>
+                <div class="nav-links">
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#works">Works</a>
+                    <a href="index.html#afterhours">After Hours</a>
+                </div>
+                <button class="theme-toggle" id="theme-toggle">◑</button>
+            </nav>
+        </div>
+
+        <div class="container">
+            
+            <section style="padding-top: 150px; padding-bottom: 40px;">
+                <span class="label">Works</span>
+                
+                <div class="title-row">
+                    <h1>Projects</h1>
+                    
+                    <a href="index.html#works" class="back-pill">
+                        <span class="arrow">&larr;</span> 
+                        <span>Back to Home</span>
+                    </a>
+                </div>
+                <p>My collection of personal/collaborative research, experiments, and engineering works.</p>
+            </section>
+
+            <section style="padding-top: 0;">
+                <div class="project-grid">
+                    
+                    <article class="glass-card project-card">
+                        <div>
+                            <h3>Lighting from Gaussian Splatting</h3>
+                            <p>Research proposal for interpreting high-fidelity lighting environments directly from 3D Gaussian Splatting scenes.</p>
+                        </div>
+                        <div style="margin-top:20px; display:flex; gap:6px;">
+                            <span class="meta-tag">Research</span><span class="meta-tag">Python</span>
+                        </div>
+                    </article>
+    
+                    <article class="glass-card project-card">
+                        <div>
+                            <h3>Realtime Material Engine</h3>
+                            <p>Web-based PBR simulation engine featuring custom shaders like "Glass Rainbow Slime" and refractive indices.</p>
+                        </div>
+                        <div style="margin-top:20px; display:flex; gap:6px;">
+                            <span class="meta-tag">WebGL</span><span class="meta-tag">Three.js</span>
+                        </div>
+                    </article>
+    
+                    <article class="glass-card project-card">
+                        <div>
+                            <h3>Automated UI Test Gen (SBSE)</h3>
+                            <p>Automating UI test sequence generation using genetic algorithms and search-based engineering principles.</p>
+                        </div>
+                        <div style="margin-top:20px; display:flex; gap:6px;">
+                            <span class="meta-tag">Genetic Algo</span><span class="meta-tag">Automation</span>
+                        </div>
+                    </article>
+
+                    <article class="glass-card project-card">
+                        <div>
+                            <h3>Vulkan Renderer</h3>
+                            <p>A custom C++ game engine built from scratch using Vulkan API for high-performance graphics.</p>
+                        </div>
+                        <div style="margin-top:20px; display:flex; gap:6px;">
+                            <span class="meta-tag">C++</span><span class="meta-tag">Vulkan</span>
+                        </div>
+                    </article>
+
+                    <article class="glass-card project-card">
+                        <div>
+                            <h3>AI Image Classifier</h3>
+                            <p>Deep learning model implementation for classifying texture patterns in historic architectural images.</p>
+                        </div>
+                        <div style="margin-top:20px; display:flex; gap:6px;">
+                            <span class="meta-tag">PyTorch</span><span class="meta-tag">CV</span>
+                        </div>
+                    </article>
+
+                    </div>
+            </section>
+
+            <footer>
+                &copy; 2026 Seohyun Ahn. All rights reserved.
+                <br><br>
+            </footer>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

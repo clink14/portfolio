@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Seohyun Ahn | @ KAIST</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .full-gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 16px;
+        }
+        .gallery-card {
+            min-height: 250px;
+        }
+    </style>
+</head>
+<body data-theme="light">
+
+    <canvas id="hero-canvas"></canvas>
+
+    <div id="content-wrapper">
+
+        <div class="nav-wrapper">
+            <nav class="nav-pill">
+                <a href="index.html" class="nav-brand">Seohyun Ahn</a>
+                <div class="nav-links">
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#works">Works</a>
+                    <a href="index.html#afterhours">After Hours</a>
+                </div>
+                <button class="theme-toggle" id="theme-toggle">◑</button>
+            </nav>
+        </div>
+
+        <div class="container">
+                    
+            <section style="padding-top: 150px; padding-bottom: 40px;">
+                <span class="label">After Hours</span>
+                
+                <div class="title-row">
+                    <h1>Gallery</h1>
+                    
+                    <a href="index.html#afterhours" class="back-pill">
+                        <span class="arrow">&larr;</span> 
+                        <span>Back to Home</span>
+                    </a>
+                </div>
+                <p>A sandbox for shaders, photography, and generative motion artifacts.</p>
+            </section>
+
+            <section style="padding-top: 0;">
+                <div class="full-gallery-grid">
+                    
+                    <a href="#" class="gallery-card" style="background-image: linear-gradient(135deg, #f6d365 0%, #fda085 100%);">
+                        <div class="gallery-overlay">
+                            <span class="gallery-title">Seoul Nightscapes</span>
+                            <span class="gallery-tag">Photography</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="gallery-card" style="background-image: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);">
+                        <div class="gallery-overlay">
+                            <span class="gallery-title">Raymarching Tests</span>
+                            <span class="gallery-tag">GLSL Sketch</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="gallery-card" style="background-image: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);">
+                        <div class="gallery-overlay">
+                            <span class="gallery-title">Concept Sketches</span>
+                            <span class="gallery-tag">Digital Art</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="gallery-card" style="background-image: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);">
+                        <div class="gallery-overlay">
+                            <span class="gallery-title">Generative Motion</span>
+                            <span class="gallery-tag">TouchDesigner</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="gallery-card" style="background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);">
+                        <div class="gallery-overlay">
+                            <span class="gallery-title">Reaction Diffusion</span>
+                            <span class="gallery-tag">Processing</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="gallery-card" style="background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);">
+                        <div class="gallery-overlay">
+                            <span class="gallery-title">Minimal UI Study</span>
+                            <span class="gallery-tag">Figma</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="gallery-card" style="background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);">
+                        <div class="gallery-overlay">
+                            <span class="gallery-title">Water Shader</span>
+                            <span class="gallery-tag">Unity HLSL</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="gallery-card" style="background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);">
+                        <div class="gallery-overlay">
+                            <span class="gallery-title">Neon City</span>
+                            <span class="gallery-tag">Blender 3D</span>
+                        </div>
+                    </a>
+
+                </div>
+            </section>
+
+            <footer>
+                &copy; 2026 Seohyun Ahn. All rights reserved.
+                <br><br>
+            </footer>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
